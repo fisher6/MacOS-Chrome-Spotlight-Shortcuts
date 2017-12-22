@@ -1,12 +1,13 @@
 #!/bin/bash
 
+short_dir='/Users/fisher/Downloads/shorts'
+
 ## Required fields
 echo URL: 
 read url
 echo Short: 
 read short
 ## Optional fields
-short_dir='/Users/fisher/Downloads/shorts'
 dirs=$(cd $short_dir; ls -d ./*/)
 echo 'Dirs? ('${dirs}'):'
 read dir
